@@ -46,14 +46,14 @@ const MediaMiddle = ({audio, song, duration, currentTime, playIcon}) => {
   const handlePlay = () => {
     if(audio.current.played.length > 0){
         if(audio.current.paused) {
-            playIcon.current.src = "../../../public/imgs/spotify_pause.png"
+            playIcon.current.src = "./public/imgs/spotify_pause.png"
             audio.current.play()
         }else {
-            playIcon.current.src = "../../../public/imgs/spotify_play.png"
+            playIcon.current.src = "./public/imgs/spotify_play.png"
             audio.current.pause()
         }
     }else {
-        playIcon.current.src = "../../../public/imgs/spotify_pause.png"
+        playIcon.current.src = "./public/imgs/spotify_pause.png"
         audio.current.src = song.preview
         audio.current.play()
     }
@@ -90,7 +90,7 @@ const MediaMiddle = ({audio, song, duration, currentTime, playIcon}) => {
             ref={playIcon}
             width="32"
             alt=""
-            />
+            /> 
             <img src="./imgs/spotify_next.png"
             width="14" 
             onClick={playNext}
