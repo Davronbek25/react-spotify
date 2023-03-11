@@ -19,8 +19,8 @@ const NavBar = () => {
     <div className="container-fluid g-0 transparent-bg" ref={nav} id="nav">
         <div className="row d-flex justify-content-between w-100 align-items-center h-100">
             <div className="col braces">
-                <img src="../../../public/imgs/above-before (2).png" width={32} alt="" />
-                <img src="../../../public/imgs/above-next.png" width={32} alt="" />
+                <img src="./imgs/above-before (2).png" width={32} alt="" />
+                <img src="./imgs/above-next.png" width={32} alt="" />
             </div>
            <NavbarSub/>
         </div>
