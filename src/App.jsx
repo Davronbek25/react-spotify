@@ -19,7 +19,7 @@ function App() {
     setSongId(id)
     let chosenSong = [...res.map(songes => songes.find(song => song.id === id))]
     let selectedSong = chosenSong.find(s => s !== undefined)
-    playIcon.current && (playIcon.current.src = "../public/imgs/spotify_pause.png")
+    playIcon.current && (playIcon.current.src = "./imgs/spotify_pause.png")
     if(selectedSong) {
       setSong(selectedSong)
       audio.current.src = selectedSong.preview
