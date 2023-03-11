@@ -35,7 +35,7 @@ const MediaMiddle = ({audio, song, duration, currentTime, playIcon}) => {
 
     if(ended){
         el.current.style.width = "0%"
-        playIcon.current.src = "../../../public/imgs/spotify_play.png"
+        playIcon.current.src = "./imgs/spotify_play.png"
     }else el.current.style.width = percentage.toString() + "%"
 
     let minutes = "0" + Math.floor(audio.current.currentTime / 60)
@@ -46,14 +46,14 @@ const MediaMiddle = ({audio, song, duration, currentTime, playIcon}) => {
   const handlePlay = () => {
     if(audio.current.played.length > 0){
         if(audio.current.paused) {
-            playIcon.current.src = "./public/imgs/spotify_pause.png"
+            playIcon.current.src = "./imgs/spotify_pause.png"
             audio.current.play()
         }else {
-            playIcon.current.src = "./public/imgs/spotify_play.png"
+            playIcon.current.src = "./imgs/spotify_play.png"
             audio.current.pause()
         }
     }else {
-        playIcon.current.src = "./public/imgs/spotify_pause.png"
+        playIcon.current.src = "./imgs/spotify_pause.png"
         audio.current.src = song.preview
         audio.current.play()
     }
