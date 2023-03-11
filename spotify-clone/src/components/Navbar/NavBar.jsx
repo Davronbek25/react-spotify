@@ -18,15 +18,9 @@ const NavBar = () => {
   return (
     <div className="container-fluid g-0 transparent-bg" ref={nav} id="nav">
         <div className="row d-flex justify-content-between w-100 align-items-center h-100">
-            <div className="col-2 braces">
-                <span className="">
-                <i className="fa-solid fa-caret-left"></i>
-                <i className="fa-solid fa-circle-chevron-left"></i>
-                </span>
-                <span className="">
-                <i className="fa-solid fa-caret-right"></i>
-                <i className="fa-solid fa-circle-chevron-right"></i>
-                </span>
+            <div className="col braces">
+                <img src="../../../public/imgs/above-before (2).png" width={32} alt="" />
+                <img src="../../../public/imgs/above-next.png" width={32} alt="" />
             </div>
            <NavbarSub/>
         </div>

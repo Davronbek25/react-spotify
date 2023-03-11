@@ -2,13 +2,8 @@ import React, { useRef, useContext } from "react"
 import { SongsContext } from "../../context/SongsContextProvider"
 
 const MediaLeft = ({chosenSongs}) => {
-    // console.log(chosenSongs)
-    // let songsContext = useContext(SongsContext)
-    // let songs = songsContext[0]
-    // let songId = songsContext[2]
-    // console.log(songId)
-    // let chosenSong = [...songs.map(songes => songes.find(song => song.id === songId))]
-    // chosenSong[0] && console.log(chosenSong[0].album.cover_big)
+  let songsContext = useContext(SongsContext)
+    let songIdHandler = songsContext[1]
     let heart = useRef()
     const likeBtn = () => {
         if(heart.current) {
@@ -20,14 +15,15 @@ const MediaLeft = ({chosenSongs}) => {
         }
       };
   return (
-    <div className="col-3 p-0">
-        <div className="row left-media-btm">
+    <div className="col p-0">
+        <div className="row flex-nowrap left-media-btm">
             <div className="col-2 position-relative">
                 <img
                 src={chosenSongs && chosenSongs.album.cover_big}
                 width=""
                 className=""
                 alt=""
+                onClick={() => songIdHandler(chosenSongs && chosenSongs.id)}
                 />
                 <span>
                     <img
@@ -36,25 +32,23 @@ const MediaLeft = ({chosenSongs}) => {
                     />
                 </span>
             </div>
-            <div className="col-2 ms-1 d-flex align-items-center p-0">
+            <div className="col-auto ms-2 d-flex align-items-center p-0">
                 <div className="left-media-btm-text">
                     <h6 className="text-white">{chosenSongs && chosenSongs.artist.name}</h6>
-                    <p className="mb-0">{chosenSongs && chosenSongs.album.title_short}</p>
+                    <p className="mb-0">{chosenSongs && chosenSongs.title_short}</p>
                 </div>
             </div>
             <div className="col-2 d-flex align-items-center p-0">
-                <span>
-                    <img
-                    src="./imgs/spotify_like.png"
-                    alt="like"
-                    ref={heart}
-                    onClick={likeBtn}
-                    />
-                    <img
-                    src="./imgs/spotify_picture-in-picture.png"
-                    alt=""
-                    />
-                </span>
+                  <img
+                  src="./imgs/spotify_like.png"
+                  alt="like"
+                  ref={heart}
+                  onClick={likeBtn}
+                  />
+                  <img
+                  src="./imgs/spotify_picture-in-picture.png"
+                  alt=""
+                  />
             </div>
         </div>
     </div>

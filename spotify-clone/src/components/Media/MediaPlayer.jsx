@@ -13,7 +13,7 @@ const MediaPlayer = ({audio, duration, currentTime, playIcon}) => {
   return (
     <div className="play-media">
         <div className="container-fluid">
-            <div className="row d-flex justify-content-between">
+            <div className="row d-flex flex-nowrap justify-content-between">
                 <MediaLeft chosenSongs={chosenSongs}/>
                 <MediaMiddle audio={audio} song={chosenSongs} duration={duration} currentTime={currentTime} playIcon={playIcon}/>
                 <MediaRight audio={audio}/>

@@ -2,8 +2,8 @@ import React from 'react'
 
 const NavbarSub = () => {
   return (
-    <div className="col-3" id="dropdown-col">
-        <div className="dropdown dropdown-nav">
+    <div className="col" id="dropdown-col">
+        <div className="float-end dropdown dropdown-nav">
             <a
                 className="btn btn-secondary dropdown-toggle d-flex"
                 href="#"

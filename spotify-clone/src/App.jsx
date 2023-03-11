@@ -8,7 +8,7 @@ import SongsContextProvider from "./context/SongsContextProvider";
 function App() {
   const [res, setRes] = useState([])
   const [reload, setReload] = useState(false)
-  const [songId, setSongId] = useState(1109739)
+  const [songId, setSongId] = useState(1449740572)
   const [song, setSong] = useState({})
   const currentTime = useRef()
   const duration = useRef()
@@ -18,13 +18,10 @@ function App() {
   const songIdHandler = (id) => {
     setSongId(id)
     let chosenSong = [...res.map(songes => songes.find(song => song.id === id))]
-    // console.log(chosenSong.find(s => s !== undefined))
     let selectedSong = chosenSong.find(s => s !== undefined)
     playIcon.current && (playIcon.current.src = "../public/imgs/spotify_pause.png")
     if(selectedSong) {
       setSong(selectedSong)
-      // console.log(chosenSong[0].album.cover_big)
-      // console.log(audio)
       audio.current.src = selectedSong.preview
       audio.current.play()
 
@@ -37,7 +34,6 @@ function App() {
   const reloader = () => setReload(prev => !prev)
 
   useFetch(reloader, responder, reload)
-  // res.length > 1 && console.log(res)
   return (
     <SongsContextProvider songs={res} songIdHandler={songIdHandler} songId={songId}>
       <div className="container-fluid main-container g-0 d-flex">

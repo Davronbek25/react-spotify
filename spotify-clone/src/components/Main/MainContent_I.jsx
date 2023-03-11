@@ -17,10 +17,10 @@ const MainContent_I = () => {
             } else greeting.current.innerHTML = "Good evening";
     }
   return (
-    <div className="container-fluid first-main">
+    <div className="container-fluid first-main mb-md-4">
         <h2 ref={greeting} className="mt-3">Good afternoon</h2>
         <div className="list-cards container ms-2 mt-4">
-            <div className="row row-cols-3">
+            <div className="row">
                 {songs && songs.map((song, index) => 
                     (<>
                     <AlbumCard song={song} key={index} start={0}/>

@@ -33,9 +33,6 @@ const MediaRight = ({audio}) => {
     "mid" : "high"
     
     audio.current.volume = volume
-    // console.log(range.current.value)
-    // range.current.value =  "2"
-    // range.current.setAttribute("value", volume * 100)
 
     volumeIconControl(volume * 100)
   }
@@ -53,29 +50,16 @@ const MediaRight = ({audio}) => {
       setMute(prev => !prev)
       audio.current.volume = 0
       speaker.current.src = "./imgs/spotify_speaker_mute.png"
-      // console.log(mute, audio.current.volume)
     }else {
       setMute(prev => !prev)
       audio.current.volume = volume
       volumeIconControl(volume * 100)
-      // console.log(mute, audio.current.volume)
     }
-    // if(mute){
-    //     console.log(audio.current.volume)
-    //     setMute(false)
-    //     audio.current.volume = volume
-    //     // range.current.setAttribute("value", volume * 100)
-    // }else {
-    //     setMute(true)
-    //     audio.current.volume = 0.01
-    //     console.log(audio.current.volume)
-    //     // range.current.setAttribute("value", '0')
-    // }
   }
 
   return (
-    <div className="col-3 text-white right-media-btm">
-        <div className="d-flex align-items-center h-100">
+    <div className="col text-white right-media-btm ps-5 pe-0 ps-md-3">
+        <div className="d-flex align-items-center h-100 float-end">
             <img src="./imgs/spotify_lyrics.png" alt="lyrics" />
             <img src="./imgs/spotify_queue.png" alt="queue" />
             <img
@@ -92,8 +76,7 @@ const MediaRight = ({audio}) => {
             <input
             ref={range}
             type="range"
-            value="100"
-            readOnly
+            defaultValue
             onChange={handleChangeVolume}
             />
             <img
