@@ -60,7 +60,7 @@ const Footer = () => {
                     <ul className="list-unstyled d-flex footer-socials">
                         <li className="ms-3">
                             <a href="#" className="link-dark">
-                                <img src="./public/imgs/camera.png" 
+                                <img src="./imgs/camera.png" 
                                 alt="camera"
                                 height={16}
                                 width={16} />
@@ -68,7 +68,7 @@ const Footer = () => {
                         </li>
                         <li className="ms-3">
                             <a href="#" className="link-dark">
-                                <img src="./public/imgs/facebook.png" 
+                                <img src="./imgs/facebook.png" 
                                 alt="camera"
                                 height={16}
                                 width={16} />
@@ -76,7 +76,7 @@ const Footer = () => {
                         </li>
                         <li className="ms-3">
                             <a href="#" className="link-dark">
-                                <img src="./public/imgs/twitter.png" 
+                                <img src="./imgs/twitter.png" 
                                 alt="camera"
                                 height={16}
                                 width={16} />
