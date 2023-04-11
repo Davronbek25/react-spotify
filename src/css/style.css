@@ -399,11 +399,17 @@
     #progress-bar-btm {
         width: 12.5rem;
     }
+    #mobile {
+        display: block;
+    }
 }
 
 @media only screen and (min-width: 992px) {
     #progress-bar-btm {
         width: 22.2rem;
+    }
+    #mobile {
+        display: none;
     }
 }
 

@@ -8,8 +8,7 @@ const MediaPlayer = ({audio, duration, currentTime, playIcon}) => {
     let songsContext = useContext(SongsContext)
     let songs = songsContext[0]
     let songId = songsContext[2]
-    let chosenSong = [...songs.map(songes => songes.find(song => song.id === songId))]
-    let chosenSongs = chosenSong.find(s => s !== undefined)
+    let chosenSongs = songs.length > 1 ? songs[1][5] : ''
   return (
     <div className="play-media">
         <div className="container-fluid">
