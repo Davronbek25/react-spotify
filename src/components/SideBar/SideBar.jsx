@@ -3,7 +3,7 @@ import SideBarSections from "./SideBarSections";
 
 const SideBar = () => {
   return (
-    <div className="container side-bar d-inline-flex justify-content-center">
+    <div id="sidebar" className="container side-bar d-inline-flex justify-content-center">
       <div className="row d-flex flex-column w-100 pt-4">
         <SideBarSections />
         {/* <!-- SIDE BAR BUTTONS --> */}

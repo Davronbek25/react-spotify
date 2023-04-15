@@ -4,6 +4,7 @@ import Main from "./components/Main/Main";
 import MediaPlayer from "./components/Media/MediaPlayer";
 import useFetch from "./customHooks/useFetch";
 import SongsContextProvider from "./context/SongsContextProvider";
+import Mobile from "./components/Mobile/Mobile";
 
 function App() {
   const [res, setRes] = useState([])
@@ -37,6 +38,7 @@ function App() {
   return (
     <SongsContextProvider songs={res} songIdHandler={songIdHandler} songId={songId}>
       <div className="container-fluid main-container g-0 d-flex">
+        <Mobile/>
         <SideBar/>
         <Main/>
         <MediaPlayer audio={audio} duration={duration} currentTime={currentTime} playIcon={playIcon}/>

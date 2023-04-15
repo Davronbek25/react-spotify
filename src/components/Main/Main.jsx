@@ -4,7 +4,7 @@ import NavBar from '../Navbar/NavBar'
 
 const Main = () => {
   return (
-    <div className="container-fluid g-0 main-bar changing-bg d-inline-flex flex-wrap">
+    <div id='main' className="container-fluid g-0 main-bar changing-bg d-inline-flex flex-wrap">
         <NavBar/>
         <MainContent/>
     </div>
