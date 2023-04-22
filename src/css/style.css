@@ -424,7 +424,7 @@
     }
 
     html {
-        overflow: hidden;
+        overflow-x: hidden;
     }
 }
 
@@ -589,13 +589,22 @@ footer>.row>.col-6>ul>li>a:hover {
 /* MOBILE MAIN */
 
 #mobileMainFirst {
-    background: linear-gradient(145deg, #84231e, #121212 50%);
+    background: linear-gradient(145deg, #84231e, #121212 45%);
     min-height: 17rem;
 }
 
 #mobileMainFirst > div:first-child {
-    padding-top: 18px;
-    padding-right: 2px;
+    padding-top: 17px;
+    padding-right: 14px;
+}
+
+#mobileMainFirst > h4:first-of-type,
+#mobileMainSecond > div > h4 {
+    font-size: 16.5px;
+    font-family: "Montserrat";
+    font-weight: 700;
+    margin-bottom: 21px;
+    margin-top: 54px;
 }
 
 .swiper {
