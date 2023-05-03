@@ -2,9 +2,9 @@ import React from 'react'
 
 const Footer = () => {
   return (
-    <footer className='py-5 mt-5 mb-5'>
-        <div className="row px-5">
-            <div className="col-6 col-md-2 mb-3">
+    <footer className='py-5 mt-sm-5 mt-2 mb-5'>
+        <div className="row px-sm-5 px-3">
+            <div className="col-sm-6 col-xs-12 col-md-2 mb-3">
                 <h6 className='text-white fw-bold'>Company</h6>
                 <ul className="nav flex-column">
                     <li className="nav-item mb-2">
@@ -18,7 +18,7 @@ const Footer = () => {
                     </li>
                 </ul>
             </div>
-            <div className="col-6 col-md-2 mb-3">
+            <div className="col-sm-6 col-xs-12 col-md-2 mb-3">
                 <h6 className='text-white fw-bold'>Communities</h6>
                 <ul className="nav flex-column">
                     <li className="nav-item mb-2">
@@ -41,7 +41,7 @@ const Footer = () => {
                     </li>
                 </ul>
             </div>
-            <div className="col-6 col-md-2 ms-md-4 ms-lg-0 mb-3">
+            <div className="col-sm-6 col-xs-12 col-md-2 ms-md-4 ms-lg-0 mb-3">
                 <h6 className='text-white fw-bold'>Useful links</h6>
                 <ul className="nav flex-column">
                     <li className="nav-item mb-2">
@@ -56,9 +56,9 @@ const Footer = () => {
                 </ul>
             </div>
             <div className="col-md-5 offset-lg-1 mb-3">
-                <div className="d-flex w-100 justify-content-end">
+                <div className="d-flex w-100 justify-content-sm-end">
                     <ul className="list-unstyled d-flex footer-socials">
-                        <li className="ms-3">
+                        <li className="ms-sm-3">
                             <a href="#" className="link-dark">
                                 <img src="./imgs/camera.png" 
                                 alt="camera"
@@ -86,14 +86,14 @@ const Footer = () => {
                 </div>
             </div>
         </div>
-        <hr className='text-white-50 mx-5'/>
-        <div className="d-flex flex-sm-row justify-content-between px-5 pt-2 pb-4 my-4">
-            <ul className="list-unstyled d-flex footer-bottom">
-                <li className="me-3">Legal</li>
-                <li className="me-3">Privacy Center</li>
-                <li className="me-3">Privacy Policy</li>
-                <li className="me-3">Cookie Settings</li>
-                <li className="me-3">About Ads</li>
+        <hr className='text-white-50 mx-3 mx-sm-5'/>
+        <div className="d-flex flex-wrap flex-sm-nowrap flex-sm-row justify-md-content-between px-3 px-sm-5 pt-2 pb-4 my-4">
+            <ul className="list-unstyled d-flex footer-bottom flex-sm-nowrap flex-wrap">
+                <li className="me-3 mb-3 mb-sm-0">Legal</li>
+                <li className="me-3 mb-3 mb-sm-0">Privacy Center</li>
+                <li className="me-3 mb-3 mb-sm-0">Privacy Policy</li>
+                <li className="me-3 mb-sm-0">Cookie Settings</li>
+                <li className="me-3 mb-sm-0">About Ads</li>
             </ul>
             <p className="text-white-50">© 2022 Spotify AB</p>
         </div>

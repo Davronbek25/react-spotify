@@ -409,6 +409,7 @@
 }
 
 @media only screen and (max-width: 600px) {
+
     #sidebar,
     #main,
     .play-media {
@@ -420,7 +421,7 @@
     }
 
     body {
-        -webkit-appearance:none
+        -webkit-appearance: none
     }
 
     html {
@@ -544,12 +545,12 @@ body {
     background-color: #83978A;
 }
 
-footer>.row>.col-6>ul>li>a {
+footer>.row>.col-sm-6>ul>li>a {
     color: rgba(255, 255, 255, .5);
     text-decoration: none;
 }
 
-footer>.row>.col-6>ul>li>a:hover {
+footer>.row>.col-sm-6>ul>li>a:hover {
     color: white !important;
     text-decoration-line: underline;
 }
@@ -593,13 +594,13 @@ footer>.row>.col-6>ul>li>a:hover {
     min-height: 17rem;
 }
 
-#mobileMainFirst > div:first-child {
+#mobileMainFirst>div:first-child {
     padding-top: 17px;
     padding-right: 14px;
 }
 
-#mobileMainFirst > h4:first-of-type,
-#mobileMainSecond > div > h4 {
+#mobileMainFirst>h4:first-of-type,
+#mobileMainSecond>div>h4 {
     font-size: 16.5px;
     font-family: "Montserrat";
     font-weight: 700;
@@ -612,6 +613,7 @@ footer>.row>.col-6>ul>li>a:hover {
     height: 100%;
     margin-left: 15px;
 }
+
 /* 
 .swiper-wrapper {
     transform: translate3d(-647px, 0px, 0px);
@@ -622,7 +624,7 @@ footer>.row>.col-6>ul>li>a:hover {
     font-size: 18px;
     background: #fff;
     background: transparent;
-    width: 149px!important;
+    width: 149px !important;
 
     /* Center slide text vertically */
     display: flex;
@@ -634,20 +636,41 @@ footer>.row>.col-6>ul>li>a:hover {
     display: none;
 }
 
-.swiper-slide > div:first-child {
+.swiper-slide>div:first-child {
     background: transparent;
     border: none;
 }
 
-.swiper-slide > .card > .card-body {
-    padding-top: 8.5px!important;
+.swiper-slide>.card>.card-body {
+    padding-top: 8.5px !important;
 }
 
-.swiper-slide > .card > .card-body > h5 {
+.swiper-slide>.card>.card-body>h5 {
     font-family: "Montserrat";
     font-size: 1rem;
     color: white;
     font-weight: 500;
+}
+
+#bottomNavbar {
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.8) 15%, rgba(0, 0, 0, 1) 22%);
+    position: fixed;
+    bottom: 0;
+    z-index: 5;
+    padding-top: 8px;
+}
+
+#bottomNavbar .col {
+    opacity: 0.5;
+}
+
+#bottomNavbar .col.active {
+    opacity: 1;
+}
+
+#bottomNavbar p {
+    font-size: 11px;
+    margin-top: 4px;
 }
 
 body {
