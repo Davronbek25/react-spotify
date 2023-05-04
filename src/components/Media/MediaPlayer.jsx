@@ -7,8 +7,22 @@ import MediaRight from './MediaRight'
 const MediaPlayer = ({audio, duration, currentTime, playIcon}) => {
     let songsContext = useContext(SongsContext)
     let songs = songsContext[0]
-    let chosenSongs = songs.length > 1 ? songs[1][5] : ''
     let songId = songsContext[2]
+    let chosenSongs
+    if(songId) {
+      if(songs.length > 1) {
+        for(let i = 0; i < 3; i++) {
+          let chosenSongsArr = songs[i].find(song => song.id === songId)
+          if(chosenSongsArr.length > 1) {
+            chosenSongs = chosenSongsArr
+          }
+        }
+        console.log(chosenSongs, 'chosen songs')
+      }
+    } else {
+      chosenSongs = songs.length > 1 ? songs[1][5] : ''
+    }
+    // console.log(songId, 'songid')
   return (
     <div className="play-media">
         <div className="container-fluid">
