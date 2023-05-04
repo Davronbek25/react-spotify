@@ -7,8 +7,8 @@ import MediaRight from './MediaRight'
 const MediaPlayer = ({audio, duration, currentTime, playIcon}) => {
     let songsContext = useContext(SongsContext)
     let songs = songsContext[0]
-    let songId = songsContext[2]
     let chosenSongs = songs.length > 1 ? songs[1][5] : ''
+    let songId = songsContext[2]
   return (
     <div className="play-media">
         <div className="container-fluid">

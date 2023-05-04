@@ -653,11 +653,11 @@ footer>.row>.col-sm-6>ul>li>a:hover {
 }
 
 #bottomNavbar {
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.8) 15%, rgba(0, 0, 0, 1) 22%);
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.2) 10%, rgba(0, 0, 0, 0.95) 54%, rgba(0, 0, 0, 1) 41%);
     position: fixed;
     bottom: 0;
     z-index: 5;
-    padding-top: 8px;
+    padding-top: 63px;
 }
 
 #bottomNavbar .col {
@@ -671,6 +671,48 @@ footer>.row>.col-sm-6>ul>li>a:hover {
 #bottomNavbar p {
     font-size: 11px;
     margin-top: 4px;
+}
+
+#bottomPlayer {
+    position: fixed;
+    z-index: 7;
+    bottom: 70px;
+}
+
+#bottomPlayer .row {
+    background-color: #84231e;
+    margin-left: -4px;
+    margin-right: 7px;
+    padding: 7px;
+    border-radius: 6px;
+}
+
+#bottomPlayer .row div:first-child img {
+    width: 2.5rem;
+    border-radius: 4px;
+}
+
+.bottom-player-text {
+    font-family: "Montserrat";
+    font-size: 13px;
+    letter-spacing: -0.3px;
+    font-weight: 500;
+    color: white;
+    padding-top: 3px;
+    padding-left: 12px;
+}
+
+.bottom-player-text>h6 {
+    font-size: 13px;
+    font-weight: 500;
+}
+
+.bottom-player-right img {
+    width: 22px;
+}
+
+.bottom-player-right i {
+    font-size: 19px;
 }
 
 body {

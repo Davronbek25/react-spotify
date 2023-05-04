@@ -3,6 +3,7 @@ import { SongsContext } from '../../../context/SongsContextProvider'
 import MobileMainSecond from './MobileMainSecond'
 import MobileMainFirst from './MobileMainFirst'
 import Footer from '../../Footer/Footer'
+import BottomPlayer from '../BottomPlayer/BottomPlayer'
 import BottomNavbar from '../BottomNavbar/BottomNavbar'
 
 const MobileMain = () => {
@@ -13,6 +14,7 @@ const MobileMain = () => {
       {songs.length > 1 && <MobileMainFirst songs={songs}/>}
       {songs.length > 1 && <MobileMainSecond songs={songs}/>}
       <Footer/>
+      <BottomPlayer/>
       <BottomNavbar/>
     </div>
   )
