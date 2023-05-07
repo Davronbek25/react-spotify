@@ -653,10 +653,18 @@ footer>.row>.col-sm-6>ul>li>a:hover {
 }
 
 #bottomNavbar {
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.2) 10%, rgba(0, 0, 0, 0.95) 54%, rgba(0, 0, 0, 1) 41%);
     position: fixed;
     bottom: 0;
     z-index: 5;
+}
+
+.bottomNavbarShort {
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.95) 15%, rgba(0, 0, 0, 1) 75%);
+    padding-top: 6px;
+}
+
+.bottomNavbarTall {
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.2) 10%, rgba(0, 0, 0, 0.95) 54%, rgba(0, 0, 0, 1) 41%);
     padding-top: 63px;
 }
 
@@ -707,12 +715,26 @@ footer>.row>.col-sm-6>ul>li>a:hover {
     font-weight: 500;
 }
 
-.bottom-player-right img {
+.bottom-player-right img:first-child {
     width: 22px;
 }
 
-.bottom-player-right i {
-    font-size: 19px;
+.bottom-player-right img:nth-child(2) {
+    width: 14px;
+    filter: invert(100%);
+}
+
+#progress-bar-mobile {
+    background: #5E5E5E;
+    height: 2px;
+    border-radius: 0.25rem;
+    margin: 0;
+    overflow: hidden;
+    position: absolute;
+    bottom: 0;
+    width: 96%;
+    padding-left: 0;
+    padding-right: 0;
 }
 
 body {

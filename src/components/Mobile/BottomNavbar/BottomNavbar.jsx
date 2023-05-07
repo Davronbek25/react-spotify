@@ -1,8 +1,8 @@
 import React from "react";
 
-const BottomNavbar = () => {
+const BottomNavbar = ({ bottomNavbar }) => {
   return (
-    <div className="container" id="bottomNavbar">
+    <div ref={bottomNavbar} className="container bottomNavbarShort" id="bottomNavbar">
       <div className="row d-flex justify-content-between">
         <div className="col active text-center">
           <img src="./imgs/home_spotify.png" alt="" height="21px" />
